@@ -16,7 +16,6 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @PropertySource("classpath:database.properties")
-@ComponentScan(value = "java")
 @EnableTransactionManagement
 @Configuration
 public class AppConfig {

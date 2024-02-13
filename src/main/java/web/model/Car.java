@@ -1,12 +1,11 @@
 package web.model;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "car")
+@Table
 public class Car {
 
     @Id
