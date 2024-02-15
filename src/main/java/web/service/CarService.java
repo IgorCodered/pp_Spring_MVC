@@ -1,7 +1,11 @@
 package web.service;
 
-import org.springframework.stereotype.Service;
+import web.model.Car;
 
-@Service
-public class CarService {
+import java.time.LocalDate;
+import java.util.List;
+
+public interface CarService {
+    void add(String model, int maxSpeed, LocalDate date);
+    List<Car> getCountCars(int count);
 }
